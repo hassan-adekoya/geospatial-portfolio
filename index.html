@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Geospatial Portfolio | Technologist, Product Manager, Engineer</title>
+  <meta name="description" content="Modern one-page portfolio showcasing geospatial products" />
+  <style>
+    :root{--bg:#0b1020;--panel:#111a2e;--panel2:#0f1728;--text:#e8eefc;--muted:#9fb0d0;--line:#24314f;--accent:#7c9cff;--accent2:#4ee0b6;--shadow:0 20px 60px rgba(0,0,0,.35)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at top,#18213a 0,#0b1020 55%);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block;border-radius:18px}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(11,16,32,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(159,176,208,.15)}
+    .navin{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:16px;flex-wrap:wrap}
+    .brand{font-weight:800;letter-spacing:.3px}.links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+    .hero{padding:72px 0 36px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+    .eyebrow{display:inline-flex;gap:10px;align-items:center;padding:8px 12px;border:1px solid rgba(124,156,255,.25);background:rgba(124,156,255,.08);border-radius:999px;color:#cfe0ff;font-size:13px}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:18px 0 16px}.sub{font-size:clamp(18px,2.3vw,22px);color:var(--muted);max-width:60ch}
+    .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{padding:14px 18px;border-radius:14px;font-weight:700;border:1px solid transparent}.primary{background:linear-gradient(135deg,var(--accent),#9f7cff);color:white;box-shadow:var(--shadow)}.secondary{border-color:rgba(159,176,208,.22);background:rgba(255,255,255,.02)}
+    .hero-card{background:linear-gradient(180deg,rgba(17,26,46,.95),rgba(15,23,40,.95));border:1px solid rgba(159,176,208,.16);border-radius:28px;padding:24px;box-shadow:var(--shadow)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.stat{background:rgba(255,255,255,.03);border:1px solid rgba(159,176,208,.12);border-radius:18px;padding:16px}.stat b{display:block;font-size:24px}.stat span{color:var(--muted);font-size:13px}
+    section{padding:26px 0 10px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:20px;flex-wrap:wrap}.section-head h2{margin:0;font-size:30px}.section-head p{margin:0;color:var(--muted);max-width:70ch}
+    .projects{display:grid;gap:24px}.card{display:grid;grid-template-columns:1fr 1.05fr;gap:22px;background:linear-gradient(180deg,rgba(17,26,46,.92),rgba(15,23,40,.92));border:1px solid rgba(159,176,208,.16);border-radius:28px;padding:18px;box-shadow:var(--shadow)}
+    .card:nth-child(even){grid-template-columns:1.05fr 1fr}.meta{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 16px}.pill{font-size:12px;padding:7px 10px;border-radius:999px;background:rgba(124,156,255,.1);border:1px solid rgba(124,156,255,.18);color:#dbe5ff}.content h3{font-size:28px;margin:6px 0 10px}.content p{color:var(--muted);margin:0 0 14px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{background:rgba(255,255,255,.03);border:1px solid rgba(159,176,208,.12);border-radius:18px;padding:14px}.box h4{margin:0 0 8px;font-size:15px;color:#dfe8ff}.box ul{margin:0;padding-left:18px;color:var(--muted)}.box li{margin:7px 0}
+    .imgwrap{padding:10px;background:rgba(255,255,255,.02);border:1px solid rgba(159,176,208,.1);border-radius:22px}.imgwrap img{width:100%;height:100%;object-fit:cover}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:rgba(255,255,255,.03);border:1px solid rgba(159,176,208,.12);border-radius:20px;padding:18px}.step b{display:block;margin-bottom:8px;color:#eff4ff}.step p{margin:0;color:var(--muted);font-size:14px}
+    .footer{padding:34px 0 60px;color:var(--muted);font-size:14px}
+    @media (max-width: 960px){.hero-grid,.card,.card:nth-child(even),.steps,.grid2{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero{padding-top:46px}}
+    @media (max-width: 640px){.stats{grid-template-columns:1fr}.links{gap:12px}.wrap{padding:0 16px}.hero{padding-bottom:18px}.content h3{font-size:24px}}
+  </style>
+</head>
+<body>
+  <div class="nav"><div class="wrap navin"><div class="brand">Geospatial Portfolio</div><div class="links"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></div>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Lead Engineer • Geospatial Products • Architecture</div>
+          <h1>Building spatial tools that turn complex data into decisions.</h1>
+          <p class="sub">I design and deliver geospatial products for public-sector planning, traffic safety, and field operations—combining product thinking, software architecture, automation, and map-based storytelling.</p>
+          <div class="cta"><a class="btn primary" href="#projects">View Projects</a></div>
+        </div>
+        <div class="hero-card">
+          <img src="vzv_portfolio_card.png" alt="Vision Zero NYC project snapshot" />
+          <div class="stats">
+            <div class="stat"><b>3</b><span>Signature geospatial products</span></div>
+            <div class="stat"><b>100%</b><span>Hands-on product ownership</span></div>
+            <div class="stat"><b>Multi-stack</b><span>ESRI, .NET, web maps, automation</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head"><h2>Featured work</h2><p>Three portfolio case studies that show product leadership, spatial reasoning, and practical delivery at scale.</p></div>
+      <div class="projects">
+        <article class="card">
+          <div class="imgwrap"><img src="vzv_portfolio_card.png" alt="Vision Zero NYC visual snapshot" /></div>
+          <div class="content">
+            <h3>Vision Zero NYC</h3>
+            <div class="meta"><span class="pill">Traffic safety</span><span class="pill">Web GIS</span><span class="pill">Policy analytics</span></div>
+            <p>Led development of a geospatial product that helps track fatality and injury indicators, highlight contributing factors, and communicate interventions that support NYC’s Vision Zero strategy.</p>
+            <div class="grid2">
+              <div class="box"><h4>What I built</h4><ul><li>Map-driven public safety analytics</li><li>Interactive layers for indicators and interventions</li><li>Product framing for policy and operations stakeholders</li></ul></div>
+              <div class="box"><h4>Why it matters</h4><ul><li>Makes safety data usable and visible</li><li>Supports citywide decision-making</li><li>Demonstrates end-to-end geospatial product delivery</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+                    <div class="imgwrap"><img src="nymtc_portfolio_card.png" alt="NYMTC Socio Economic Forecaster visual snapshot" /></div>
+          <div class="content">
+            <h3>NYMTC Socio Economic Forecaster</h3>
+            <div class="meta"><span class="pill">Regional planning</span><span class="pill">Forecasting</span><span class="pill">Interactive maps</span></div>
+            <p>Built a forecast platform used to inform transportation investment decisions and regional planning across New York, New Jersey, and Connecticut.</p>
+            <div class="grid2">
+              <div class="box"><h4>Forecast outputs</h4><ul><li>Population, employment, labor force, households</li><li>County and sub-region planning coverage</li><li>Inputs for travel demand modeling</li></ul></div>
+              <div class="box"><h4>Engineering value</h4><ul><li>Supports long-range planning cycles</li><li>Turns complex model output into usable maps</li><li>Bridges data, UX, and public-sector decision-making</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="imgwrap"><img src="hope_portfolio_card.png" alt="PROJECT HOPE visual snapshot" /></div>
+          <div class="content">
+            <h3>PROJECT HOPE</h3>
+            <div class="meta"><span class="pill">Routing automation</span><span class="pill">ArcMap</span><span class="pill">Algorithm engineering</span></div>
+            <p>Designed a route-generation system for 7,000 survey districts, producing printable route packages for volunteers with minimal training and no computer equipment.</p>
+            <div class="grid2">
+              <div class="box"><h4>How it was done</h4><ul><li>Converted street maps into a connected network</li><li>Applied a Chinese Postman Algorithm</li><li>Automated PDF generation for field use</li></ul></div>
+              <div class="box"><h4>Delivery scale</h4><ul><li>7,000 districts supported</li><li>1,200 routes selected for survey</li><li>2 months from start to final deliverables</li></ul></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-head"><h2>Architecture and stack</h2><p>Use this section to show employers the range of systems you can own, integrate, and ship.</p></div>
+      <div class="steps">
+        <div class="step"><b>Product design</b><p>Translate stakeholder needs into geospatial interfaces, workflows, and reporting tools.</p></div>
+        <div class="step"><b>Spatial engineering</b><p>Work with ESRI ArcMap, Network Analyst, map layers, route logic, and spatial data cleanup.</p></div>
+        <div class="step"><b>Automation</b><p>Use .NET/C#, scripts, macros, and batch workflows to reduce manual effort and scale delivery.</p></div>
+        <div class="step"><b>Decision support</b><p>Build tools that help planners, volunteers, and analysts act on complex location-based data.</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head"><h2>Contact section</h2><p>LinkedIn</p></div>
+      <div class="box"><p style="margin:0;color:var(--muted)">Building products that make complex spatial data understandable, operational, and useful.</p></div>
+    </section>
+  </main>
+</body>
+</html>
